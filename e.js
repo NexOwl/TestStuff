@@ -1,28 +1,59 @@
-var curShowing = 0;
+var curContent = 0;
+var timeout	= 500;
+var closetimer	= 0;
+var ddmenuitem	= 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	mclose();
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.display = 'block';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.display = 'none';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
 
 function clickMe(code) {
 	hide();
-	show(code);
-	curShowing = code;
-}
-
-function show(code) {
-	var e = document.getElementById(code);
-	e.style.display="block";
+	curContent = document.getElementById(code);
+	curContent.style.display="block";
 }
 
 function hide() {
 	//hide everythingggg!
-	if (curShowing) {
-		var e = document.getElementById(curShowing);
-		e.style.display="none";
+	if (curContent) {
+		curContent.style.display="none";
 	}
 }
 
 function start() {
-	var ans = "";
-	var display = document.createTextNode(ans);
-	document.body.appendChild(display);
+	
 }
 
 window.onload = start;

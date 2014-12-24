@@ -8,48 +8,54 @@
 </head>
 <body>
 	<div id="menu">
-		<div id="menuButton">
-			<span onclick="clickMe('0');"><h2>ZERO</h2></span>
+		<div class="menuButton">
+			<span onmouseover="mopen('timer')" onmouseout="mClosetime()"><h2>Timer</h2></span>
 		</div>
-		<div id="menuButton">
+	</div>
+
+	<div class="secondaryMenu" id="timer" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<div class="secondaryMenuButton" onclick="clickMe('0');">
+			<span ><h2>ZERO</h2></span>
+		</div>
+		<div class="secondaryMenuButton">
 			<span onclick="clickMe('1');"><h2>ONE</h2></span>
 		</div>
-		<div id="menuButton">
+		<div class="secondaryMenuButton">
 			<span onclick="clickMe('2');"><h2>TWO</h2></span>
 		</div>
-		<div id="menuButton">
+		<div class="secondaryMenuButton">
 			<span onclick="clickMe('3');"><h2>THREE</h2></span>
 		</div>
-		<div id="menuButton">
+		<div class="secondaryMenuButton">
 			<span onclick="clickMe('4');"><h2>FOUR</h2></span>
 		</div>
-		<div id="menuButton">
+		<div class="secondaryMenuButton">
 			<span onclick="clickMe('5');"><h2>FIVE</h2></span>
 		</div>
-		<div id="menuButton">
+		<div class="secondaryMenuButton">
 			<span onclick="clickMe('6');"><h2>SIX</h2></span>
 		</div>
-		<div id="menuButton">
+		<div class="secondaryMenuButton">
 			<span onclick="clickMe('7');"><h2>SEVEN</h2></span>
 		</div>
-		<div id="menuButton">
+		<div class="secondaryMenuButton">
 			<span onclick="clickMe('8');"><h2>EIGHT</h2></span>
 		</div>
-		<div id="menuButton">
+		<div class="secondaryMenuButton">
 			<span onclick="clickMe('9');"><h2>NINE</h2></span>
 		</div>
 	</div>
 	<div id="content">
-		<img src="image/timer/0.png" style="display:none;" id="0"></img>
-		<img src="image/timer/1.png" style="display:none;" id="1"></img>
-		<img src="image/timer/2.png" style="display:none;" id="2"></img>
-		<img src="image/timer/3.png" style="display:none;" id="3"></img>
-		<img src="image/timer/4.png" style="display:none;" id="4"></img>
-		<img src="image/timer/5.png" style="display:none;" id="5"></img>
-		<img src="image/timer/6.png" style="display:none;" id="6"></img>
-		<img src="image/timer/7.png" style="display:none;" id="7"></img>
-		<img src="image/timer/8.png" style="display:none;" id="8"></img>
-		<img src="image/timer/9.png" style="display:none;" id="9"></img>
+		<img src="image/timer/0.png" style="Display: none;;" id="0"></img>
+		<img src="image/timer/1.png" style="Display: none;" id="1"></img>
+		<img src="image/timer/2.png" style="Display: none;" id="2"></img>
+		<img src="image/timer/3.png" style="Display: none;" id="3"></img>
+		<img src="image/timer/4.png" style="Display: none;" id="4"></img>
+		<img src="image/timer/5.png" style="Display: none;" id="5"></img>
+		<img src="image/timer/6.png" style="Display: none;" id="6"></img>
+		<img src="image/timer/7.png" style="Display: none;" id="7"></img>
+		<img src="image/timer/8.png" style="Display: none;" id="8"></img>
+		<img src="image/timer/9.png" style="Display: none;" id="9"></img>
 	</div>
 		<div id="header">
 		<h1>Site of D00m</h1>
